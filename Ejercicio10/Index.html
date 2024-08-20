@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Edades</title>
+    <!-- Enlace a la CDN de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        .edad {
+            margin-bottom: 10px;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Ingresar Edades de Estudiantes</h1>
+
+        <div id="turnoManana" class="container border p-3 mb-4">
+            <h2>Turno Mañana (5 estudiantes)</h2>
+            <div class="form-group">
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 1" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 2" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 3" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 4" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 5" />
+            </div>
+        </div>
+
+        <div id="turnoTarde" class="container border p-3 mb-4">
+            <h2>Turno Tarde (6 estudiantes)</h2>
+            <div class="form-group">
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 1" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 2" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 3" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 4" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 5" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 6" />
+            </div>
+        </div>
+
+        <div id="turnoNoche" class="container border p-3 mb-4">
+            <h2>Turno Noche (11 estudiantes)</h2>
+            <div class="form-group">
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 1" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 2" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 3" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 4" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 5" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 6" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 7" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 8" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 9" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 10" />
+                <input type="number" class="form-control edad" placeholder="Edad del estudiante 11" />
+            </div>
+        </div>
+
+        <button onclick="calcularPromedios()" class="btn btn-primary btn-block">Calcular Promedios</button>
+
+        <div class="results">
+            <h2>Resultados</h2>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <!-- Enlace a la CDN de Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="./Ejercicio10.js"></script>
+</body>
+</html>
